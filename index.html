@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>blaventure.bgk.io</title>
+
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				<label for="gold">Gold Pieces:</label>
+				<input name="gold" type="text" placeholder="Remaining gold..." />
+			</div>
+			<div id="buttons">
+				<div class="button noselect hp" data-stat="hp">
+					<div>HP</div>
+					<div class="noselect cost" data-base="10">0</div>
+				</div>
+				<div class="button noselect mp" data-stat="mp">
+					<div>MP</div>
+					<div class="noselect cost" data-base="15">0</div>
+				</div>
+				<div class="button noselect atk" data-stat="atk">
+					<div>Atk</div>
+					<div class="noselect cost" data-base="20">0</div>
+				</div>
+				<div class="button noselect def" data-stat="def">
+					<div>Def</div>
+					<div class="noselect cost" data-base="20">0</div>
+				</div>
+				<div class="button noselect hit" data-stat="hit">
+					<div>Hit</div>
+					<div class="noselect cost" data-base="15">0</div>
+				</div>
+				<div class="button noselect crit" data-stat="crit">
+					<div>Crit</div>
+					<div class="noselect cost" data-base="15">0</div>
+				</div>
+				<div class="button noselect dodge" data-stat="dodge">
+					<div>Dodge</div>
+					<div class="noselect cost" data-base="20">0</div>
+				</div>
+			</div>
+			<div id="info">
+				<div class="info-section">
+					<div class="label">Dynasty Level</div>
+					<div class="data level">0</div>
+				</div>
+				<div class="info-section">
+					<div class="label">HP Bonus</div>
+					<div class="data hp">0</div>
+					<span>/</span>
+					<div class="data hpMax">25</div>
+				</div>
+				<div class="info-section">
+					<div class="label">MP Bonus</div>
+					<div class="data mp">0</div>
+					<span>/</span>
+					<div class="data mpMax">25</div>
+				</div>
+				<div class="info-section">
+					<div class="label">Atk Bonus</div>
+					<div class="data atk">0</div>
+					<span>/</span>
+					<div class="data atkMax">15</div>
+				</div>
+				<div class="info-section">
+					<div class="label">Def Bonus</div>
+					<div class="data def">0</div>
+					<span>/</span>
+					<div class="data defMax">15</div>
+				</div>
+				<div class="info-section">
+					<div class="label">Hit Bonus</div>
+					<div class="data hit">0</div>
+					<span>/</span>
+					<div class="data hitMax">10</div>
+				</div>
+				<div class="info-section">
+					<div class="label">Crit Bonus</div>
+					<div class="data crit">0</div>
+					<span>/</span>
+					<div class="data critMax">15</div>
+				</div>
+				<div class="info-section">
+					<div class="label">Dodge Bonus</div>
+					<div class="data dodge">0</div>
+					<span>/</span>
+					<div class="data dodgeMax">15</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

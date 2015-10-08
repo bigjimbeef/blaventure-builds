@@ -1,0 +1,85 @@
+* {
+	font-family:	consolas;
+	margin:			0;
+	padding:		0;
+}
+
+div#main {
+	margin:			30px;
+}
+
+div#main div#header {
+	margin-bottom:	30px;
+}
+
+div#main div#header label {
+	margin-left:	405px;
+	margin-right:	40px;
+}
+
+div#main div#header input[type=text] {
+	width:			250px;
+}
+
+div#buttons {
+	height:			70px;
+}
+
+div.button {
+	float:			left;
+	width:			75px;
+
+	border:			1px solid #777;
+	border-radius: 	10px;
+
+	padding:		10px;
+	margin:			10px;
+	text-align: 	center;
+
+	cursor: 		default;
+}
+
+.noselect {
+	-user-select:			none;
+	-webkit-user-select:	none;
+	-moz-user-select:		none;
+}
+
+div.button div.cost {
+	color:			#EF4100;
+	font-size:		13px;
+}
+
+div.button.disabled {
+	border:			1px solid #DDD;
+	color:			1px solid #DDD;
+}
+
+div.button.disabled div {
+	color:			#DDD;
+}
+
+div.button div.cost:after {
+	content:		" GP";
+}
+
+div.button:hover:not(.disabled) {
+	cursor:			pointer;
+	border:			1px solid #00AEEF;
+	color:			#00AEEF;
+}
+
+div.info-section {
+	margin-top:		30px;
+}
+
+div.info-section div {
+	display:		inline-block;
+}
+
+div.info-section div.label {
+	width:			200px;
+
+	margin-left: 	10px;
+	margin-right:	100px;
+}
