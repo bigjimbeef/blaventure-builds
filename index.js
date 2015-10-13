@@ -12,7 +12,7 @@ function getBaseCostByLevel() {
 }
 
 //
-// statName: e.g. "hp", "mp" etc.
+// statName: e.g. "endurance", "oddness" etc.
 //
 function setCostByBonusLevel(statName) {
 
@@ -52,13 +52,13 @@ function setCostByBonusLevel(statName) {
 
 function setAllCosts() {
 
-	setCostByBonusLevel("hp");
-	setCostByBonusLevel("mp");
-	setCostByBonusLevel("atk");
-	setCostByBonusLevel("def");
-	setCostByBonusLevel("hit");
-	setCostByBonusLevel("crit");
-	setCostByBonusLevel("dodge");
+	setCostByBonusLevel("endurance");
+	setCostByBonusLevel("oddness");
+	setCostByBonusLevel("strength");
+	setCostByBonusLevel("nerve");
+	setCostByBonusLevel("precision");
+	setCostByBonusLevel("acuity");
+	setCostByBonusLevel("reflexes");
 }
 
 function resetSingleStat(statName) {
@@ -70,13 +70,13 @@ function resetCalculator() {
 
 	$("#info div.data.level").text(0);
 
-	resetSingleStat("hp");
-	resetSingleStat("mp");
-	resetSingleStat("atk");
-	resetSingleStat("def");
-	resetSingleStat("hit");
-	resetSingleStat("crit");
-	resetSingleStat("dodge");
+	resetSingleStat("endurance");
+	resetSingleStat("oddness");
+	resetSingleStat("strength");
+	resetSingleStat("nerve");
+	resetSingleStat("precision");
+	resetSingleStat("acuity");
+	resetSingleStat("reflexes");
 
 	setAllCosts();
 }
@@ -126,7 +126,8 @@ function bindEvents() {
 
 $(document).ready(function() {
 
+	bindEvents();
+
 	setAllCosts();
 
-	bindEvents();
 });

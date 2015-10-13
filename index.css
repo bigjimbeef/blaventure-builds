@@ -83,3 +83,8 @@ div.info-section div.label {
 	margin-left: 	10px;
 	margin-right:	100px;
 }
+
+strong {
+	color:			#00AEEF;
+	font-weight:	bold;
+}
